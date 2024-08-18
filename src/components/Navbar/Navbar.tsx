@@ -48,7 +48,7 @@ const Navbar: React.FC = async () => {
                 </li>
                 <li>
                   <Link className="ml-4 block" href="/sign-up">
-                    <span className="__className_b3f6a0 relative z-20 block cursor-pointer rounded-xl bg-black px-8 py-3 text-center text-sm text-white dark:bg-white dark:text-black font-semibold shadow-2xl">
+                    <span className="__className_b3f6a0 relative z-20 block cursor-pointer rounded-xl bg-black px-8 py-3 text-center text-sm text-white dark:bg-white dark:text-black font-semibold shadow-2xl hidden sm:block">
                       Sign up
                     </span>
                   </Link>
@@ -58,19 +58,6 @@ const Navbar: React.FC = async () => {
           </div>
           <div className="absolute left-0 top-full flex justify-center"></div>
         </nav>
-      </div>
-      <div className="flex h-full items-center md:hidden">
-        <svg
-          stroke="currentColor"
-          fill="currentColor"
-          strokeWidth="0"
-          viewBox="0 0 512 512"
-          height="1em"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M432 176H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h352c8.8 0 16 7.2 16 16s-7.2 16-16 16zM432 272H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h352c8.8 0 16 7.2 16 16s-7.2 16-16 16zM432 368H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h352c8.8 0 16 7.2 16 16s-7.2 16-16 16z"></path>
-        </svg>
       </div>
     </div>
   );
