@@ -1,4 +1,5 @@
 import { auth, currentUser } from "@clerk/nextjs/server";
+import { redirect } from "next/navigation";
 import Image from "next/image";
 
 const DashboardPage = async () => {
@@ -6,7 +7,7 @@ const DashboardPage = async () => {
   const user = await currentUser();
 
   if (!userId || !user) {
-    return <div>you are not logged in</div>;
+    redirect("/sign-in");
   }
 
   console.log(user);
